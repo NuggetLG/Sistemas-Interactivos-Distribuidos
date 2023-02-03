@@ -13,6 +13,7 @@ public class ApiManager : MonoBehaviour
 
     [SerializeField]
     private int UserId = 1;
+
     public void GetUsersClick()
     {
         StartCoroutine(GetPlayerInfo());
@@ -91,6 +92,19 @@ public class ApiManager : MonoBehaviour
             Debug.Log(request.error);
         else
             Dimage.texture = ((DownloadHandlerTexture)request.downloadHandler).texture;
+    }
+
+    public void idfir()
+    {
+        UserId = 1;
+    }
+    public void idterc()
+    {
+        UserId = 3;
+    }
+    public void idsec()
+    {
+        UserId = 2;
     }
 }
 
